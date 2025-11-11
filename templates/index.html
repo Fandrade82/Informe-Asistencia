@@ -1,1 +1,30 @@
 
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informe de Asistencia</title>
+  <style>
+    body, html { margin:0; padding:0; height:100%; font-family:Arial; }
+    .container {
+      display:flex; flex-direction:column;
+      justify-content:center; align-items:center;
+      height:100vh; text-align:center; padding:20px;
+    }
+    form { display:flex; flex-direction:column; gap:10px; max-width:300px; width:100%; }
+    input[type="file"], input[type="submit"] { padding:10px; font-size:1rem; }
+    input[type="submit"] { background:#4CAF50; color:white; border:none; cursor:pointer; }
+    input[type="submit"]:hover { background:#45a049; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Sube tu archivo Excel de asistencia</h2>
+    <form method="post" enctype="multipart/form-data">
+      <input type="file" name="file">
+      <input type="submit" value="Procesar">
+    </form>
+  </div>
+</body>
+</html>
